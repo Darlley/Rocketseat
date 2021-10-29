@@ -36,7 +36,7 @@
                     <span>Entradas</span>
                     <img src="assets/income.svg" alt="Imagem de entrada das transações">
                 </h3>
-                <p>R$ 5.000,00</p>
+                <p data-js="income-display">R$ 5.000,00</p>
             </div>
 
             <div class="card">
@@ -44,7 +44,7 @@
                     <span>Saídas</span>
                     <img src="assets/expense.svg" alt="Imagem de saída das transações">
                 </h3>
-                <p>R$ 2.000,00</p>
+                <p data-js="expanse-display">R$ 2.000,00</p>
             </div>
 
             <div class="card total">
@@ -52,7 +52,7 @@
                     <span>Total</span>
                     <img src="assets/total.svg" alt="Imagem do total de suas finanças">
                 </h3>
-                <p>R$ 3.000,00</p>
+                <p data-js="total-display">R$ 3.000,00</p>
             </div>
         </section>
 
@@ -71,24 +71,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expanse">- R$ 50,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="assets/minus.svg" alt="Remover transação"></td>
-                    </tr>
-                    <tr>
-                        <td class="description">Criação de website</td>
-                        <td class="income">R$ 5.000,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="assets/minus.svg" alt="Remover transação"></td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expanse">- R$ 200,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="assets/minus.svg" alt="Remover transação"></td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </section>
@@ -100,7 +83,7 @@
             <div class="modal-content">
                 <div id="form">
                     <h2>Nova transação</h2>
-                    <form action="">
+                    <form action="" onsubmit="Form.submit(event)">
                         <div class="input-group">
                             <label for="description" class="sr-only">Descrição</label>
                             <input type="text" id="description" name="description" placeholder="Descrição">
