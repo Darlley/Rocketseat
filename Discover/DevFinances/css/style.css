@@ -238,6 +238,9 @@ button:hover{
     background-color: var(--color-theme-light-lightgreen);
     color: var(--color-theme-light-white);
 }
+.card.negative{
+    background-color: #ff4040;
+}
 .card.total h3, .card.total p{
     color: var(--color-theme-light-white);
 }
